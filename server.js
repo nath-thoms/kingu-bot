@@ -27,19 +27,35 @@ client.on('message', async message => {
     
     // joins array 'args' into message  
     const sayMessage = args.join(" ");
+    if(sayMessage === "is Karthus a dead champion?") {
+      message.channel.send("No! Only weebs think that! 😻 ")
+    } else {
 
     //deletes original message
     message.delete().catch(O_o=>{}); 
-    
+
+   
+    const sayMessage = args.join(" ");
     // sends joined message
     message.channel.send(sayMessage);
   }
+}
 
   
-  if(command === "thisisasecreteastereggtotestifthisshitworkscorrectlywhywouldievertypethisinareallifesituation") {
+  if (command === "thisisasecreteastereggtotestifthisshitworkscorrectlywhywouldievertypethisinareallifesituation") {
     message.reply('Hi. This is a secret command in which I waste your time as you expect something exciting to happen. This is just a message in plain text. Top kek')
     message.react('😍')
       }
+
+  if (command === "euw") {
+      const summonerId = args.join("");
+      message.reply(`http://euw.op.gg/summoner/userName=${summonerId}`);
+  }
+
+
+
+
+      
 });
 
 
