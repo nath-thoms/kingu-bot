@@ -1,0 +1,16 @@
+{
+  "name": "kingu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Kingu.js",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "discord": "^0.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
