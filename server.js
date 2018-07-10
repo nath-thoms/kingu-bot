@@ -35,15 +35,12 @@ client.on('message', async message => {
     message.channel.send(sayMessage);
   }
 
-
-
-
-
-
-
+  
+  if(command === "thisisasecreteastereggtotestifthisshitworkscorrectlywhywouldievertypethisinareallifesituation") {
+    message.reply('Hi. This is a secret command in which I waste your time as you expect something exciting to happen. This is just a message in plain text. Top kek')
+    message.react('😍')
+      }
 });
-
-
 
 
 client.login(config.token);
