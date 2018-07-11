@@ -20,7 +20,7 @@ client.on('message', async message => {
   const command = args.shift().toLowerCase();
 
   if(command === "say") {
-
+      console.log("what is happeneing");
       
     // if first argument is a repeat of command - handle error.
       if (args[0].toLowerCase() === "!say") {
@@ -54,26 +54,23 @@ client.on('message', async message => {
   //     message.reply(`http://euw.op.gg/summoner/userName=${summonerId}`);
   // }
 
-  if (command === "NSFW") {
+  if (command === "nsfw") {
     message.reply('Ohh. Senpai is feeling horny OwO ')
     message.reply(`http://www.ehs.ucsb.edu/files/images/gs/hazard4.jpg`);
 }
 
-
-
-
-  // if (command === "rank") {
-  //   const servers = ['euw', 'eune', 'na', 'br', 'lan', 'las', 'oce', 'ru', 'tr', 'jp', 'cn'];
-  //   const playerServer = args.shift();
-  //   const summonerId = args.join("");
-  //   if (servers.includes(playerServer)) {
-  //     message.reply(`http://${playerServer}.op.gg/summoner/userName=${summonerId}`);
-  //   } else if(playerServer === 'kr') {
-  //     message.reply(`http://op.gg/summoner/userName=${summonerId}`)
-  //   } else {
-  //     message.reply("Eww, gross request! Try again! ✌️ ")
-  //   }
-  // }
+  if (command === "rank") {
+    const servers = ['euw', 'eune', 'na', 'br', 'lan', 'las', 'oce', 'ru', 'tr', 'jp', 'cn'];
+    const playerServer = args.shift();
+    const summonerId = args.join("");
+    if (servers.includes(playerServer)) {
+      message.reply(`http://${playerServer}.op.gg/summoner/userName=${summonerId}`);
+    } else if(playerServer === 'kr') {
+      message.reply(`http://op.gg/summoner/userName=${summonerId}`)
+    } else {
+      message.reply("Eww, gross request! Try again! ✌️ ")
+    }
+  }
       
 });
 
