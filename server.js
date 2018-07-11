@@ -52,6 +52,11 @@ client.on('message', async message => {
       message.reply(`http://euw.op.gg/summoner/userName=${summonerId}`);
   }
 
+  if (command === "NSFW") {
+    message.reply('Ohh. Senpai is feeling horny OwO ')
+    message.reply(`http://www.ehs.ucsb.edu/files/images/gs/hazard4.jpg`);
+}
+
 
 
 
