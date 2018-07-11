@@ -4,6 +4,8 @@ const config = require("./config.json");
 
 // 'client.on('message')' commands triggered when a specific message is sent to channel.
 
+client.on('error', console.error);
+
 client.on('message', async message => {
     
     if(message.content.indexOf(config.prefix) !== 0) return;
@@ -47,14 +49,23 @@ client.on('message', async message => {
     message.react('😍')
       }
 
-  if (command === "euw") {
-      const summonerId = args.join("");
-      message.reply(`http://euw.op.gg/summoner/userName=${summonerId}`);
-  }
+  // if (command === "euw") {
+  //     const summonerId = args.join("");
+  //     message.reply(`http://euw.op.gg/summoner/userName=${summonerId}`);
+  // }
 
-
-
-
+  // if (command === "rank") {
+  //   const servers = ['euw', 'eune', 'na', 'br', 'lan', 'las', 'oce', 'ru', 'tr', 'jp', 'cn'];
+  //   const playerServer = args.shift();
+  //   const summonerId = args.join("");
+  //   if (servers.includes(playerServer)) {
+  //     message.reply(`http://${playerServer}.op.gg/summoner/userName=${summonerId}`);
+  //   } else if(playerServer === 'kr') {
+  //     message.reply(`http://op.gg/summoner/userName=${summonerId}`)
+  //   } else {
+  //     message.reply("Eww, gross request! Try again! ✌️ ")
+  //   }
+  // }
       
 });
 
