@@ -4,8 +4,9 @@
   "description": "",
   "main": "Kingu.js",
   "dependencies": {
-    "discord.js": "^11.3.2",
-    "discord": "^0.8.2"
+    "axios": "^0.18.0",
+    "discord": "^0.8.2",
+    "discord.js": "^11.3.2"
   },
   "devDependencies": {},
   "scripts": {
