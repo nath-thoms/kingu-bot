@@ -28,7 +28,7 @@ client.on('message', async message => {
   const command = args.shift().toLowerCase();
 
   if(command === "say") {
-      console.log("what is happeneing");
+      console.log("what is happening");
       
     // if first argument is a repeat of command - handle error.
       if (args[0].toLowerCase() === "!say") {
@@ -38,7 +38,7 @@ client.on('message', async message => {
     // joins array 'args' into message  
     const sayMessage = args.join(" ");
     if(sayMessage === "is Karthus a dead champion?") {
-      message.channel.send("No! Only weebs think that! 😻 ")
+      message.channel.send("No! Only noobs think that! 😻 ")
     } else {
 
     //deletes original message
@@ -61,11 +61,6 @@ client.on('message', async message => {
   //     const summonerId = args.join("");
   //     message.reply(`http://euw.op.gg/summoner/userName=${summonerId}`);
   // }
-
-  if (command === "nsfw") {
-    message.reply('Ohh. Senpai is feeling horny OwO ')
-    message.reply(`http://www.ehs.ucsb.edu/files/images/gs/hazard4.jpg`);
-}
 
   if (command === "rank") {
     const servers = ['euw', 'eune', 'na', 'br', 'lan', 'las', 'oce', 'ru', 'tr', 'jp', 'cn'];
@@ -101,12 +96,7 @@ client.on('message', async message => {
         })
       })
   }
-
-
-
-
-
-      
+     
 });
 
 
