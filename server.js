@@ -51,6 +51,11 @@ client.on('message', async message => {
   }
 }
 
+  if(command === "lore") {
+    let champion = args[0];
+    return message.channel.send(JSON.stringify(championData.data[champion].blurb));
+  }
+
   
   if (command === "thisisasecreteastereggtotestifthisshitworkscorrectlywhywouldievertypethisinareallifesituation") {
     message.reply('Hi. This is a secret command in which I waste your time as you expect something exciting to happen. This is just a message in plain text. Top kek')
