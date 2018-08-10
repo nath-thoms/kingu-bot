@@ -26,30 +26,7 @@ client.on('message', async message => {
   } catch (err) {
     console.log(err);
     message.reply("Ooops, sorry that doesn't work!");
-  }
-
-//   if (command === "myrank") {
-//     const summonerId = args.join("");
-//     axios.get(`${url}/summoner/v3/summoners/by-name/${summonerId}?api_key=${riotKey}`)
-//       .then( (res) => {
-//         const summonerNumber = res.data.id
-//         return summonerNumber;
-//       })
-//       .then((summonerNumber) => {
-//         console.log(summonerNumber)
-//         axios.get(`${url}/league/v3/positions/by-summoner/${summonerNumber}?api_key=${riotKey}`)
-//         .then((res) => {
-//           console.log(res)
-
-//           const embed = new Discord.RichEmbed()
-//             .setTitle(`${summonerId}'s Ranking Information`)
-//             .addField("Leagues:", `Solo-Q = ${res.data[0].tier} - ${res.data[0].rank} - ${res.data[0].leaguePoints} LP.`)
-
-//           message.channel.send({embed})
-//         })
-//       })
-//   }
-     
+  }  
 });
 
 client.login(config.token);
